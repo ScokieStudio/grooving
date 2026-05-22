@@ -12,15 +12,13 @@ export default function Footer() {
       data-testid="main-footer"
       className="relative bg-[#040404] border-t border-white/5 pt-24 pb-10 overflow-hidden"
     >
-      {/* Massive background lettering */}
-      <div
+      {/* Background logo watermark */}
+      <img
+        src={LOGO_URL}
+        alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-10 md:-bottom-20 left-0 right-0 text-center select-none"
-      >
-        <span className="font-display text-[22vw] leading-[0.85] text-white/[0.03] tracking-tight">
-          VOID
-        </span>
-      </div>
+        className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-0 w-[400px] md:w-[600px] lg:w-[720px] opacity-50 select-none"
+      />
 
       <div className="relative container-void">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
