@@ -34,7 +34,7 @@ const SERVICES = [
     title: "Diseño Personalizado",
     desc: "Bocetos a medida creados desde cero junto a nuestros artistas.",
     price: "Incluido",
-    img: "https://images.unsplash.com/photo-1583309217394-d533a3a8a23a?auto=format&fit=crop&w=1200&q=80",
+    img: "https://customer-assets.emergentagent.com/job_void-design-10/artifacts/p040h7w8_27317.jpg",
   },
   {
     icon: Eraser,
