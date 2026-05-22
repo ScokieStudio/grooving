@@ -1,5 +1,4 @@
 import { HERO_BG, LOGO_URL } from "../../lib/constants";
-import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -63,12 +62,6 @@ export default function Hero() {
           <a href="#gallery" data-testid="hero-cta-gallery" className="link-void overline">
             Ver Galería
           </a>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 animate-slowFloat">
-          <span className="overline text-white/40 text-[10px]">Desliza</span>
-          <ArrowDown size={14} className="text-gold" strokeWidth={1} />
         </div>
       </div>
     </section>
