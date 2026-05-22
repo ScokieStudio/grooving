@@ -1,4 +1,4 @@
-const GALLERY_IMAGES = [
+const BASE_IMAGES = [
   {
     url: "https://images.pexels.com/photos/7901490/pexels-photo-7901490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=900",
     alt: "Tatuaje fineline triángulo",
@@ -19,6 +19,13 @@ const GALLERY_IMAGES = [
     alt: "Tatuaje bíceps música",
     span: "md:col-span-2 h-[260px] md:h-[330px]",
   },
+];
+
+// Replicate the bento pattern 3 times → 12 images total
+const GALLERY_IMAGES = [
+  ...BASE_IMAGES,
+  ...BASE_IMAGES.map((img, i) => ({ ...img, alt: `${img.alt} (${i + 5})` })),
+  ...BASE_IMAGES.map((img, i) => ({ ...img, alt: `${img.alt} (${i + 9})` })),
 ];
 
 export default function Gallery() {
