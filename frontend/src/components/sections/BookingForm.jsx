@@ -57,13 +57,11 @@ export default function BookingForm() {
 
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
 
-    // Slight delay so the user sees the feedback
-    setTimeout(() => {
-      window.open(url, "_blank", "noopener,noreferrer");
-      toast.success("Abriendo WhatsApp para confirmar tu reserva…");
-      setForm(initialState);
-      setSubmitting(false);
-    }, 400);
+    // Open synchronously to stay inside the user gesture (avoids popup blockers)
+    window.open(url, "_blank", "noopener,noreferrer");
+    toast.success("Abriendo WhatsApp para confirmar tu reserva…");
+    setForm(initialState);
+    setSubmitting(false);
   };
 
   return (

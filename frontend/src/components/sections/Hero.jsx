@@ -41,7 +41,7 @@ export default function Hero() {
           className="font-display hero-display text-5xl sm:text-6xl md:text-7xl lg:text-[7.5rem] text-white max-w-5xl animate-fadeUp"
           style={{ animationDelay: "0.35s" }}
         >
-          El arte de la
+          El arte de la{" "}
           <br />
           <span className="italic text-gold">tinta</span> elevado.
         </h1>
