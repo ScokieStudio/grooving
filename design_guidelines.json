@@ -1,0 +1,171 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Jewel & Luxury)",
+  "brand_name": "VOID TATTOO",
+  "language": "es",
+  "colors": {
+    "background": {
+      "primary": "#050505",
+      "secondary": "#0A0A0A",
+      "tertiary": "#121212"
+    },
+    "accent": {
+      "primary": "#D4B896",
+      "hover": "#E5CFA6",
+      "muted": "rgba(212, 184, 150, 0.15)"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A3A3A3",
+      "accent": "#D4B896"
+    },
+    "border": {
+      "default": "rgba(255, 255, 255, 0.05)",
+      "accent": "rgba(212, 184, 150, 0.3)",
+      "glow": "rgba(212, 184, 150, 0.5)"
+    }
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond, serif",
+    "body_font": "Outfit, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "rules": [
+      "Use Cormorant Garamond for all H1, H2, and H3 headings. Apply 'tracking-tight'.",
+      "Use Outfit for body text with 'tracking-wide' and 'leading-relaxed' for an editorial feel.",
+      "Overlines/Subtitles must be Outfit, uppercase, text-xs or text-sm, with 'tracking-[0.2em]' (e.g., 'EL ESTUDIO').",
+      "Never use default sans for headings. Maintain a cinematic and regal typographic hierarchy."
+    ]
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing (The 'Breathing Room' Rule). Use 2-3x more padding than standard SaaS.",
+    "section_padding": "py-24 md:py-32 lg:py-40",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "border_radius": "rounded-none",
+    "grid_system": "Bento grids with extreme asymmetry for the gallery. Strict 3-col grids for services.",
+    "animation": "Subtle fade-ins, very slow organic drifts. No bouncy or rapid animations."
+  },
+  "ui_components": {
+    "buttons": {
+      "primary": "bg-transparent border border-[#D4B896] text-[#D4B896] hover:bg-[#D4B896] hover:text-[#050505] transition-all duration-300 rounded-none uppercase tracking-widest text-sm px-8 py-4",
+      "secondary": "text-white hover:text-[#D4B896] transition-colors duration-300 underline-offset-4 hover:underline"
+    },
+    "cards": {
+      "base": "bg-[#0A0A0A] border border-white/5 hover:border-[#D4B896]/30 transition-colors duration-500 rounded-none p-8"
+    },
+    "inputs": {
+      "base": "bg-transparent border-b border-white/10 hover:border-[#D4B896]/50 focus:border-[#D4B896] focus:ring-0 rounded-none px-0 py-3 text-white placeholder:text-white/30 transition-colors"
+    },
+    "icons": "lucide-react with strokeWidth={1} for a thin, elegant, fine-line look."
+  },
+  "sections": [
+    {
+      "name": "Navigation",
+      "details": "Glassmorphism header (backdrop-blur-xl bg-black/60) with a 1px bottom border of white/5. Logo centered or on the left. Navigation links should be subtle. 'Reservar' CTA on the right."
+    },
+    {
+      "name": "Hero",
+      "details": "Cinematic overlay. Use the generated `hero_background` image with `bg-black/60` overlay. Big serif headline in Spanish: 'El Arte de la Tinta Elevado'. Secondary text: 'Void Tattoo Studio. Diseño exclusivo, precisión y lujo en cada detalle.' CTA: 'Reservar Cita'."
+    },
+    {
+      "name": "About",
+      "details": "Editorial layout. Left side: generated `about_image`. Right side: H2 'Nuestra Filosofía', text explaining the luxury approach to tattooing. Use the crest logo watermark subtly in the background."
+    },
+    {
+      "name": "Services",
+      "details": "3-column grid of minimalist dark cards. Services: Tatuaje Permanente, Cover-up, Tatuajes Temporales, Piercing, Diseño Personalizado, Retoques. Include a very thin gold line or icon for each."
+    },
+    {
+      "name": "Gallery",
+      "details": "Asymmetrical masonry grid (The Tetris Grid) showcasing the minimalist fine line tattoo close-up images. Use grayscale filter with hover to reveal full contrast/subtle color."
+    },
+    {
+      "name": "Artists",
+      "details": "Cards showing the tattoo artists working in black and white. Include name, specialty, and years of experience. High-end fashion editorial vibe."
+    },
+    {
+      "name": "Stats",
+      "details": "Minimalist counter section. E.g., '10+ Años de Experiencia', '5k+ Clientes Satisfechos', 'Custom Designs'. Use the `dark_gold_texture` as a subtle background here."
+    },
+    {
+      "name": "FAQ",
+      "details": "Use Shadcn Accordion. Dark, unstyled look with just a bottom border for each item. Questions about pain, healing process, custom designs, etc."
+    },
+    {
+      "name": "Booking Form (WhatsApp)",
+      "details": "A clean, dark luxury form. Fields: Nombre, Email, Teléfono, Tipo de Servicio, Fecha, Comentarios. ON SUBMIT: Construct a WhatsApp URL (`https://wa.me/1234567890?text=...`) using the form data and open it in a new tab. Do NOT send to a backend."
+    },
+    {
+      "name": "Footer",
+      "details": "Massive spacing. Large 'VOID TATTOO' serif text. Contact info, studio location (fictional premium location), Instagram link (@void.tattoo.studio), and copyright."
+    }
+  ],
+  "image_urls": {
+    "logo": {
+      "url": "https://customer-assets.emergentagent.com/job_8a86b163-590d-4819-9fd9-33a6feddde55/artifacts/fn0h24vx_472482054_685007200955125_7499903870849008896_n.jpg",
+      "description": "VOID Tattoo Studio crest logo (Gold on black)",
+      "usage": "Navbar, Footer, and optionally as a massive low-opacity background watermark in the About section."
+    },
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/8a86b163-590d-4819-9fd9-33a6feddde55/images/786e535ec60954e66a08a3d769d8fb2cd23d77b0654ee4fcf18b68875b54b944.png",
+      "description": "Cinematic dark empty tattoo studio interior with subtle gold accents",
+      "usage": "Hero section background with black/60 overlay."
+    },
+    "texture_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/8a86b163-590d-4819-9fd9-33a6feddde55/images/e619f4e4ead677f07a33928f3fb19c2c4531157df01ffe9e550169d4a7984161.png",
+      "description": "Abstract dark luxury background with fine noise texture",
+      "usage": "Background for the Stats or FAQ section to break up the solid black."
+    },
+    "about_image": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/8a86b163-590d-4819-9fd9-33a6feddde55/images/75710df3492631e0a89bd8df7d2554a21ae2394a79cff210d942cf29346e3a5d.png",
+      "description": "Macro shot of a tattoo machine on dark leather with warm gold rim light",
+      "usage": "Main image for the 'Sobre Nosotros' (About) section."
+    },
+    "artists": [
+      {
+        "url": "https://images.pexels.com/photos/25491869/pexels-photo-25491869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Tattoo artist working in B&W",
+        "usage": "Artist profile picture 1"
+      },
+      {
+        "url": "https://images.pexels.com/photos/2928342/pexels-photo-2928342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Tattoo artist meticulously working B&W",
+        "usage": "Artist profile picture 2"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1552627019-947c3789ffb5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHw0fHx0YXR0b28lMjBhcnRpc3QlMjB3b3JraW5nJTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHx8fDE3Nzk0NzU4MDN8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Man doing tattoo grayscale",
+        "usage": "Artist profile picture 3"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.pexels.com/photos/7901490/pexels-photo-7901490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Detailed hand with triangle tattoo"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6044740/pexels-photo-6044740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Barefoot leg tattoo"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1646582679733-df910660e97f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZmluZSUyMGxpbmUlMjB0YXR0b28lMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3OTQ3NTgwM3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Arrow chest tattoo"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1547754145-ef9ff306e3f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwZmluZSUyMGxpbmUlMjB0YXR0b28lMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3OTQ3NTgwM3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Music bicep tattoo"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "This is a Dark Luxury aesthetic. Stick strictly to black (#050505), off-black (#0A0A0A), and the provided champagne gold (#D4B896).",
+    "Do NOT use bright white backgrounds anywhere. The entire site is dark mode.",
+    "Do NOT use 'Inter' for headings. You MUST use 'Cormorant Garamond' (serif) for headings to give it a regal, editorial feel, and 'Outfit' (sans) for body text. Load these via Google Fonts.",
+    "Borders should be extremely subtle, usually 1px solid rgba(255,255,255,0.05) or the gold accent color at low opacity.",
+    "Include 'lucide-react' icons but apply 'strokeWidth={1}' to them so they match the fine-line minimalist luxury vibe.",
+    "For the booking form: Do NOT set up a backend API to send emails. Instead, capture the form state in React, and on submit, build a URL: `https://wa.me/34600000000?text=${encodeURIComponent(message)}` and use `window.open(url, '_blank')`.",
+    "Apply 'data-testid' to all buttons, links, and form inputs.",
+    "Ensure all copy is in Spanish.",
+    "Build the UI in /app/frontend. Make sure to use Tailwind CSS properly.",
+    "For the gallery, use a CSS grid with different spans (e.g., col-span-2 row-span-2) to create a 'bento' or 'masonry' feel."
+  ]
+}
