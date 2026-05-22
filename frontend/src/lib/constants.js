@@ -8,7 +8,7 @@ export const INSTAGRAM_URL = "https://www.instagram.com/void.tattoo.studio/";
 export const INSTAGRAM_HANDLE = "@void.tattoo.studio";
 
 export const LOGO_URL =
-  "https://customer-assets.emergentagent.com/job_8a86b163-590d-4819-9fd9-33a6feddde55/artifacts/fn0h24vx_472482054_685007200955125_7499903870849008896_n.jpg";
+  "https://customer-assets.emergentagent.com/job_void-design-10/artifacts/14cprjao_logo22.png";
 
 export const HERO_BG =
   "https://customer-assets.emergentagent.com/job_void-design-10/artifacts/8w993cpt_17255.jpg";
