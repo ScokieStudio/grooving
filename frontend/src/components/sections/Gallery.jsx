@@ -61,10 +61,10 @@ export default function Gallery() {
               <img
                 src={img.url}
                 alt={img.alt}
-                className="w-full h-full object-cover gs-hover"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-100 group-hover:scale-[1.03] transition-all duration-700 ease-out"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <span className="absolute bottom-4 left-4 overline text-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[10px]">
                 VOID · 00{i + 1}
               </span>
