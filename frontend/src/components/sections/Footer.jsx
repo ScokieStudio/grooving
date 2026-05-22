@@ -12,13 +12,17 @@ export default function Footer() {
       data-testid="main-footer"
       className="relative bg-[#040404] border-t border-white/5 pt-24 pb-10 overflow-hidden"
     >
-      {/* Background logo watermark */}
-      <img
-        src={LOGO_URL}
-        alt=""
+      {/* Background image */}
+      <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-0 w-[400px] md:w-[600px] lg:w-[720px] opacity-50 select-none"
+        className="pointer-events-none absolute inset-0 bg-center bg-no-repeat bg-contain opacity-90"
+        style={{
+          backgroundImage:
+            "url(https://customer-assets.emergentagent.com/job_void-design-10/artifacts/zbu85wst_FondoContacto.jpg)",
+        }}
       />
+      {/* Slight dark overlay to keep contrast */}
+      <div className="absolute inset-0 bg-[#040404]/40 pointer-events-none" />
 
       <div className="relative container-void">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
