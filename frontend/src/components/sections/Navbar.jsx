@@ -50,7 +50,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               data-testid={`nav-link-${link.label.toLowerCase()}`}
-              className="overline text-white/70 hover:text-gold transition-colors duration-300"
+              className="link-void overline text-white/70"
             >
               {link.label}
             </a>

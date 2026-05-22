@@ -27,7 +27,7 @@ export default function Hero() {
         <img
           src={LOGO_URL}
           alt="VOID Tattoo Studio"
-          className="w-28 md:w-36 lg:w-44 mb-10 animate-fadeIn drop-shadow-[0_0_40px_rgba(212,184,150,0.25)]"
+          className="w-40 md:w-52 lg:w-64 mb-10 animate-fadeIn drop-shadow-[0_0_40px_rgba(212,184,150,0.25)]"
           data-testid="hero-logo"
         />
 
