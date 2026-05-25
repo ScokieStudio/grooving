@@ -6,21 +6,21 @@ const ARTISTS = [
     role: "Fundador & Realismo",
     years: "10 años",
     style: "Realismo · Retrato · Black & Grey",
-    img: "https://images.pexels.com/photos/25491869/pexels-photo-25491869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=720",
+    img: "/assets/artist-1.jpg",
   },
   {
     name: "Sofía Lerma",
     role: "Fineline & Botánico",
     years: "7 años",
     style: "Fineline · Floral · Minimalista",
-    img: "https://images.pexels.com/photos/2928342/pexels-photo-2928342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=720",
+    img: "/assets/artist-2.jpg",
   },
   {
     name: "Iván Cárdenas",
     role: "Blackwork & Geometría",
     years: "8 años",
     style: "Blackwork · Geométrico · Ornamental",
-    img: "https://images.unsplash.com/photo-1552627019-947c3789ffb5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHw0fHx0YXR0b28lMjBhcnRpc3QlMjB3b3JraW5nJTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHx8fDE3Nzk0NzU4MDN8MA&ixlib=rb-4.1.0&q=85",
+    img: "/assets/artist-3.jpg",
   },
 ];
 
@@ -66,11 +66,6 @@ export default function Artists() {
                   </h3>
                   <p className="overline text-gold mt-2">{a.role}</p>
                 </div>
-                <Instagram
-                  size={18}
-                  strokeWidth={1}
-                  className="text-white/40 group-hover:text-gold transition-colors duration-500 mt-2"
-                />
               </div>
 
               <dl className="mt-6 space-y-3 pt-6 border-t border-white/5">

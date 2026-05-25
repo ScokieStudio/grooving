@@ -2,9 +2,29 @@ import { Instagram, MapPin, Mail, Phone } from "lucide-react";
 import {
   LOGO_URL,
   INSTAGRAM_URL,
+  TIKTOK_URL,
   INSTAGRAM_HANDLE,
+  TIKTOK_HANDLE,
   NAV_LINKS,
 } from "../../lib/constants";
+
+// Custom TikTok SVG Icon because it is missing in this version of lucide-react
+const Tiktok = ({ size = 16, strokeWidth = 1, className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 export default function Footer() {
   return (
@@ -18,7 +38,7 @@ export default function Footer() {
         className="pointer-events-none absolute inset-0 bg-center bg-no-repeat bg-contain opacity-90"
         style={{
           backgroundImage:
-            "url(https://customer-assets.emergentagent.com/job_void-design-10/artifacts/zbu85wst_FondoContacto.jpg)",
+            "url(/assets/footer-bg.jpg)",
         }}
       />
       {/* Slight dark overlay to keep contrast */}
@@ -71,15 +91,23 @@ export default function Footer() {
             <ul className="space-y-4 text-sm font-body text-white/70">
               <li className="flex items-start gap-3">
                 <MapPin size={14} strokeWidth={1} className="text-gold mt-1 shrink-0" />
-                <span>Dirección por confirmar</span>
+                <span>MERLO - ZONA OESTE</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin size={14} strokeWidth={1} className="text-gold mt-1 shrink-0" />
+                <span>VILLA URQUIZA - CABA</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin size={14} strokeWidth={1} className="text-gold mt-1 shrink-0" />
+                <span>CABALLITO - CABA</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={14} strokeWidth={1} className="text-gold mt-1 shrink-0" />
-                <span>+34 600 000 000</span>
+                <span>+54 9 11 0000-0000</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={14} strokeWidth={1} className="text-gold mt-1 shrink-0" />
-                <span>hola@voidtattoo.studio</span>
+                <span>info@voidtattoo.studio</span>
               </li>
             </ul>
           </div>
@@ -94,26 +122,40 @@ export default function Footer() {
               data-testid="footer-instagram-link"
               className="inline-flex items-center gap-3 group"
             >
-              <span className="w-10 h-10 inline-flex items-center justify-center border border-white/15 group-hover:border-gold text-white/70 group-hover:text-gold transition-colors duration-300">
+              <span className="w-10 h-10 inline-flex items-center justify-center border border-white/30 group-hover:border-gold text-white/70 group-hover:text-gold transition-colors duration-300">
                 <Instagram size={16} strokeWidth={1} />
               </span>
               <span className="font-body text-sm text-white/60 group-hover:text-gold transition-colors">
                 {INSTAGRAM_HANDLE}
               </span>
             </a>
+            <a
+              href={TIKTOK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="footer-tiktok-link"
+              className="inline-flex items-center gap-3 group mt-4"
+            >
+              <span className="w-10 h-10 inline-flex items-center justify-center border border-white/30 group-hover:border-gold text-white/70 group-hover:text-gold transition-colors duration-300">
+                <Tiktok size={16} strokeWidth={1} />
+              </span>
+              <span className="font-body text-sm text-white/60 group-hover:text-gold transition-colors">
+                {TIKTOK_HANDLE}
+              </span>
+            </a>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="overline text-white/30 text-[10px]">
-            © {new Date().getFullYear()} VOID Tattoo Studio · Todos los derechos reservados
+        <div className="mt-10 pt-4 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-white/50 text-[15px]">
+            © {new Date().getFullYear()} VOID Tattoo Studio · Todos los derechos reservados - Hecho con <span className="text-primary">♥</span> por <a href="https://www.scokiestudio.com/" target="_blank" rel="noreferrer" className="text-primary hover:underline">ScokieStudio Design</a>
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="overline text-white/30 hover:text-gold text-[10px] transition-colors">
+            <a href="#" className="text-white/50 hover:text-gold text-[15px] transition-colors">
               Términos
             </a>
-            <a href="#" className="overline text-white/30 hover:text-gold text-[10px] transition-colors">
+            <a href="#" className="text-white/50 hover:text-gold text-[15px] transition-colors">
               Privacidad
             </a>
           </div>

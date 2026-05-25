@@ -1,31 +1,49 @@
 const BASE_IMAGES = [
   {
-    url: "https://images.pexels.com/photos/7901490/pexels-photo-7901490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=900",
+    url: "/assets/gallery-1.png",
     alt: "Tatuaje fineline triángulo",
     span: "md:col-span-2 md:row-span-2 h-[420px] md:h-[680px]",
   },
   {
-    url: "https://images.pexels.com/photos/6044740/pexels-photo-6044740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=600",
+    url: "/assets/gallery-2.png",
     alt: "Tatuaje en pierna",
     span: "h-[200px] md:h-[330px]",
   },
   {
-    url: "https://images.unsplash.com/photo-1646582679733-df910660e97f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZmluZSUyMGxpbmUlMjB0YXR0b28lMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3OTQ3NTgwM3ww&ixlib=rb-4.1.0&q=85",
+    url: "/assets/gallery-3.png",
     alt: "Tatuaje pecho",
     span: "h-[200px] md:h-[330px]",
   },
   {
-    url: "https://images.unsplash.com/photo-1547754145-ef9ff306e3f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwZmluZSUyMGxpbmUlMjB0YXR0b28lMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3OTQ3NTgwM3ww&ixlib=rb-4.1.0&q=85",
+    url: "/assets/gallery-4.png",
     alt: "Tatuaje bíceps música",
     span: "md:col-span-2 h-[260px] md:h-[330px]",
+  },
+  {
+    url: "/assets/gallery-6.png",
+    alt: "Tatuaje bíceps música",
+    span: "md:col-span-2 h-[260px] md:h-[330px]",
+  },
+  {
+    url: "/assets/gallery-7.png",
+    alt: "Tatuaje fineline triángulo",
+    span: "md:col-span-2 md:row-span-2 h-[420px] md:h-[680px]",
+  },
+  {
+    url: "/assets/gallery-8.png",
+    alt: "Tatuaje en pierna",
+    span: "h-[200px] md:h-[330px]",
+  },
+  {
+    url: "/assets/gallery-9.png",
+    alt: "Tatuaje pecho",
+    span: "h-[200px] md:h-[330px]",
   },
 ];
 
 // Replicate the bento pattern 3 times → 12 images total
 const GALLERY_IMAGES = [
   ...BASE_IMAGES,
-  ...BASE_IMAGES.map((img, i) => ({ ...img, alt: `${img.alt} (${i + 5})` })),
-  ...BASE_IMAGES.map((img, i) => ({ ...img, alt: `${img.alt} (${i + 9})` })),
 ];
 
 export default function Gallery() {

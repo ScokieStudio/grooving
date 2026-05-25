@@ -71,7 +71,7 @@ export default function Stats() {
       className="section-pad relative overflow-hidden"
     >
       <div
-        className="absolute inset-0 opacity-30 bg-cover bg-center"
+        className="absolute inset-0 opacity-20 bg-cover bg-center"
         style={{ backgroundImage: `url(${TEXTURE_BG})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-transparent to-[#050505]" />

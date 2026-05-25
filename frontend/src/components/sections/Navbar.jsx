@@ -12,6 +12,23 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleLinkClick = (e, href) => {
+    e.preventDefault();
+    setOpen(false);
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      const headerOffset = 90; // Approximate height of the header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return (
     <header
       data-testid="main-navbar"
@@ -26,6 +43,7 @@ export default function Navbar() {
         <a
           href="#hero"
           data-testid="nav-logo-link"
+          onClick={(e) => handleLinkClick(e, "#hero")}
           className="flex items-center gap-3 group"
         >
           <img
@@ -50,6 +68,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               data-testid={`nav-link-${link.label.toLowerCase()}`}
+              onClick={(e) => handleLinkClick(e, link.href)}
               className="link-void overline text-white/70"
             >
               {link.label}
@@ -72,6 +91,7 @@ export default function Navbar() {
           <a
             href="#booking"
             data-testid="nav-cta-reservar"
+            onClick={(e) => handleLinkClick(e, "#booking")}
             className="hidden md:inline-flex btn-void"
           >
             Reservar
@@ -95,13 +115,13 @@ export default function Navbar() {
         aria-hidden={!open}
       >
         <div
-          className={`absolute inset-0 bg-black/80 backdrop-blur-md transition-opacity duration-500 ${
+          className={`absolute inset-0 transition-opacity duration-500 mobile-drawer-overlay ${
             open ? "opacity-100" : "opacity-0"
           }`}
           onClick={() => setOpen(false)}
         />
         <aside
-          className={`absolute top-0 right-0 h-full w-[88%] max-w-sm bg-[#080808] border-l border-white/5 p-8 flex flex-col transition-transform duration-500 ${
+          className={`absolute top-0 right-0 h-full w-[88%] max-w-sm p-8 flex flex-col transition-transform duration-500 z-[70] mobile-drawer-aside ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -124,8 +144,8 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 data-testid={`mobile-nav-link-${link.label.toLowerCase()}`}
-                onClick={() => setOpen(false)}
-                className="font-display text-3xl text-white hover:text-gold transition-colors"
+                onClick={(e) => handleLinkClick(e, link.href)}
+                className="font-display text-xl text-white hover:text-gold transition-colors"
                 style={{ transitionDelay: `${i * 40}ms` }}
               >
                 {link.label}
