@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { TEXTURE_BG } from "../../lib/constants";
 
 const STATS = [
-  { value: 7, suffix: "+", label: "Años de trayectoria" },
+  { value: 20, suffix: "+", label: "Años de trayectoria" },
   { value: 4200, suffix: "+", label: "Clientes satisfechos" },
   { value: 9500, suffix: "+", label: "Tatuajes realizados" },
   { value: 100, suffix: "%", label: "Diseños exclusivos" },
@@ -78,7 +78,7 @@ export default function Stats() {
 
       <div className="relative container-void">
         <div className="text-center mb-16 reveal">
-          <span className="overline text-gold">Números</span>
+          <span className="text-lg overline text-gold">Números</span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mt-6">
             Más que <span className="italic text-gold">tinta</span>.
           </h2>

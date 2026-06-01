@@ -38,20 +38,22 @@ export default function About() {
           </h2>
 
           <div className="ornament mt-8 mb-8 max-w-md">
-            <span className="text-xs tracking-[0.3em]">VOID</span>
+            <span className="text-xs tracking-[0.3em]">GROOVING</span>
           </div>
 
           <div className="space-y-6 text-white/70 font-body leading-relaxed tracking-wide text-base md:text-lg max-w-xl">
             <p>
-              En <span className="text-gold">VOID Tattoo Studio</span> entendemos
-              que un tatuaje no es solo una marca: es una declaración. Cada
-              diseño nace de una conversación profunda entre el artista y la
-              persona, transformando ideas en piezas únicas, eternas y precisas.
+              <span className="text-gold">GROOVING Tattoo Studio</span> nació con una idea
+              clara: crear un espacio privado y personalizado,
+              donde cada persona pueda vivir la experiencia
+              de tatuarse con total libertad, comodidad y
+              respeto.
             </p>
             <p>
-              Trabajamos con material esterilizado de la más alta gama, tintas
-              veganas certificadas y un entorno cuidado al detalle para que tu
-              experiencia sea íntima, segura y memorable.
+              Es un box individual, sin distracciones ni
+              personas alrededor, pensado para que te
+              sientas en confianza y disfrutes de un momento
+              único, donde tu privacidad es prioridad.
             </p>
           </div>
 

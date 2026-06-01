@@ -26,13 +26,13 @@ export default function Hero() {
       <div className="relative z-10 container-void flex flex-col items-center text-center pt-28 pb-16">
         <img
           src={LOGO_URL}
-          alt="VOID Tattoo Studio"
+          alt="GROOVING Tattoo Studio"
           className="w-80 md:w-80 lg:w-80 mb-10 animate-fadeIn drop-shadow-[0_0_40px_rgba(212,184,150,0.25)]"
           data-testid="hero-logo"
         />
 
         <span className="overline text-gold mb-6 animate-fadeUp" style={{ animationDelay: "0.2s" }}>
-          Estudio de Tatuajes — Desde 2018
+          Estudio de Tatuajes — Desde 2016
         </span>
 
         <h1
@@ -49,7 +49,8 @@ export default function Hero() {
           className="font-body text-base md:text-lg text-white/70 max-w-xl mt-8 leading-relaxed tracking-wide animate-fadeUp"
           style={{ animationDelay: "0.55s" }}
         >
-          Diseño exclusivo, precisión y lujo en cada detalle. Tatuajes que cuentan tu historia con una estética inconfundible.
+          Diseño exclusivo, precisión y lujo en cada detalle.
+          <br /> Tatuajes que cuentan tu historia con una estética inconfundible.
         </p>
 
         <div

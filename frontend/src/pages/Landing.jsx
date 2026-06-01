@@ -38,6 +38,7 @@ export default function Landing() {
             borderRadius: 0,
             fontFamily: "Outfit, sans-serif",
             letterSpacing: "0.02em",
+            scrollBehavior: "smooth",
           },
         }}
       />

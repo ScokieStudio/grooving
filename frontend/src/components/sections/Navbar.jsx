@@ -32,11 +32,10 @@ export default function Navbar() {
   return (
     <header
       data-testid="main-navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "backdrop-blur-xl bg-[#050505]/80 border-b border-white/5"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
+        ? "backdrop-blur-xl bg-[#050505]/80 border-b border-white/5"
+        : "bg-[#050505]/80"
+        }`}
     >
       <div className="container-void flex items-center justify-between py-5 md:py-6">
         {/* Logo */}
@@ -48,12 +47,12 @@ export default function Navbar() {
         >
           <img
             src={LOGO_URL}
-            alt="VOID Tattoo Studio"
+            alt="GROOVING Tattoo Studio"
             className="h-12 w-12 md:h-14 md:w-14 object-contain transition-transform duration-500 group-hover:rotate-[8deg]"
           />
           <div className="hidden sm:flex flex-col leading-none">
             <span className="font-display text-xl md:text-2xl tracking-[0.18em] text-white">
-              VOID
+              GROOVING
             </span>
             <span className="overline text-[10px] md:text-xs text-gold mt-1">
               Tattoo Studio
@@ -109,25 +108,22 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       <div
-        className={`fixed inset-0 z-[60] lg:hidden transition-all duration-500 ${
-          open ? "pointer-events-auto" : "pointer-events-none"
-        }`}
+        className={`fixed inset-0 z-[60] lg:hidden transition-all duration-500 ${open ? "pointer-events-auto" : "pointer-events-none"
+          }`}
         aria-hidden={!open}
       >
         <div
-          className={`absolute inset-0 transition-opacity duration-500 mobile-drawer-overlay ${
-            open ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-500 bg-black/85 backdrop-blur-md mobile-drawer-overlay ${open ? "opacity-100" : "opacity-50"
+            }`}
           onClick={() => setOpen(false)}
         />
         <aside
-          className={`absolute top-0 right-0 h-full w-[88%] max-w-sm p-8 flex flex-col transition-transform duration-500 z-[70] mobile-drawer-aside ${
-            open ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`absolute top-0 right-0 h-full w-[88%] max-w-sm p-8 flex flex-col transition-transform duration-500 z-[70] bg-[#050505] border-l border-white/5 mobile-drawer-aside ${open ? "translate-x-0" : "translate-x-full"
+            }`}
         >
           <div className="flex items-center justify-between mb-12">
             <span className="font-display text-2xl tracking-[0.18em] text-white">
-              VOID
+              GROOVING
             </span>
             <button
               onClick={() => setOpen(false)}

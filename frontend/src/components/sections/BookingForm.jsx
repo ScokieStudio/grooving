@@ -82,7 +82,7 @@ export default function BookingForm() {
             disponibilidad, presupuesto y todos los detalles de tu próxima pieza.
           </p>
           <div className="ornament mt-10 max-w-xs">
-            <span className="text-xs tracking-[0.3em]">VOID</span>
+            <span className="text-xs tracking-[0.3em]">GROOVING</span>
           </div>
           <div className="mt-10 space-y-3 text-sm">
             <p className="overline text-white/40">Respuesta en menos de 24h</p>
@@ -138,7 +138,7 @@ export default function BookingForm() {
                 type="tel"
                 value={form.phone}
                 onChange={update("phone")}
-                placeholder="+34 600 000 000"
+                placeholder="+54 911 1234 5678"
                 className="input-void"
                 data-testid="booking-input-phone"
                 required
@@ -201,7 +201,7 @@ export default function BookingForm() {
               className="mt-1 w-4 h-4 accent-[#D4B896] cursor-pointer"
             />
             <span className="font-body text-xs text-white/50 tracking-wide leading-relaxed">
-              Acepto que VOID Tattoo Studio trate mis datos para gestionar mi reserva.
+              Acepto que GROOVING Tattoo Studio trate mis datos para gestionar mi reserva.
             </span>
           </label>
 
@@ -212,7 +212,7 @@ export default function BookingForm() {
               data-testid="booking-submit-button"
               className="btn-void-solid disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              <Send size={14} strokeWidth={1.2} />
+              <Send size={36} strokeWidth={1.2} />
               {submitting ? "Enviando…" : "Enviar por WhatsApp"}
             </button>
             <span className="overline text-white/40 text-[10px]">

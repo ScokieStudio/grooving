@@ -20,7 +20,7 @@ const BASE_IMAGES = [
     span: "md:col-span-2 h-[260px] md:h-[330px]",
   },
   {
-    url: "/assets/gallery-6.png",
+    url: "/assets/gallery-5.png",
     alt: "Tatuaje bíceps música",
     span: "md:col-span-2 h-[260px] md:h-[330px]",
   },
@@ -30,14 +30,34 @@ const BASE_IMAGES = [
     span: "md:col-span-2 md:row-span-2 h-[420px] md:h-[680px]",
   },
   {
-    url: "/assets/gallery-8.png",
+    url: "/assets/gallery-6.png",
     alt: "Tatuaje en pierna",
     span: "h-[200px] md:h-[330px]",
   },
   {
-    url: "/assets/gallery-9.png",
+    url: "/assets/gallery-8.png",
     alt: "Tatuaje pecho",
     span: "h-[200px] md:h-[330px]",
+  },
+  {
+    url: "/assets/gallery-9.png",
+    alt: "Tatuaje fineline triángulo",
+    span: "md:col-span-2 md:row-span-2 h-[420px] md:h-[680px]",
+  },
+  {
+    url: "/assets/gallery-10.png",
+    alt: "Tatuaje en pierna",
+    span: "h-[200px] md:h-[330px]",
+  },
+  {
+    url: "/assets/gallery-11.png",
+    alt: "Tatuaje pecho",
+    span: "h-[200px] md:h-[330px]",
+  },
+  {
+    url: "/assets/gallery-12.png",
+    alt: "Tatuaje bíceps música",
+    span: "md:col-span-2 h-[260px] md:h-[330px]",
   },
 ];
 
@@ -58,13 +78,13 @@ export default function Gallery() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-20 reveal">
           <div>
             <span className="overline text-gold">Trabajos Recientes</span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mt-6 max-w-2xl leading-[1.05]">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-5xl text-white mt-6 max-w-2xl leading-[1.05]">
               Un <span className="italic text-gold">portfolio</span> que habla
               por sí mismo.
             </h2>
           </div>
           <a
-            href="https://www.instagram.com/void.tattoo.studio/"
+            href="https://www.instagram.com/grooving_tattoo_studio/"
             target="_blank"
             rel="noopener noreferrer"
             data-testid="gallery-instagram-cta"

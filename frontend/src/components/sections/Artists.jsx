@@ -2,25 +2,20 @@ import { Instagram } from "lucide-react";
 
 const ARTISTS = [
   {
-    name: "Mateo Reyes",
-    role: "Fundador & Realismo",
-    years: "10 años",
-    style: "Realismo · Retrato · Black & Grey",
+    name: "Gustavo Caligiuri",
+    role: "Piezas grandes",
+    years: "20 años",
+    style: "Oriental, Black Work, Tradicional, Puntillismo Dot Work, Espaldas, Mangas",
     img: "/assets/artist-1.jpg",
+    url: "https://www.instagram.com/gustavo_tatuador/",
   },
   {
-    name: "Sofía Lerma",
-    role: "Fineline & Botánico",
-    years: "7 años",
-    style: "Fineline · Floral · Minimalista",
+    name: "Griselda Aranda",
+    role: "Linea fina e hiperfina, minitattoo",
+    years: "20 años",
+    style: "Acuarela, Geometricos, Tipografias, Minimalistas, Mandalas, Flores, Mariposas",
     img: "/assets/artist-2.jpg",
-  },
-  {
-    name: "Iván Cárdenas",
-    role: "Blackwork & Geometría",
-    years: "8 años",
-    style: "Blackwork · Geométrico · Ornamental",
-    img: "/assets/artist-3.jpg",
+    url: "https://www.instagram.com/griseldatatuadora/",
   },
 ];
 
@@ -39,7 +34,7 @@ export default function Artists() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {ARTISTS.map((a, i) => (
             <article
               key={a.name}
@@ -77,10 +72,40 @@ export default function Artists() {
                   <dt className="overline text-white/40 shrink-0">Estilo</dt>
                   <dd className="font-body text-white/80 text-right">{a.style}</dd>
                 </div>
+                <div className="flex justify-between items-center text-sm gap-3">
+                  <dt className="overline text-white/40 shrink-0">Instagram</dt>
+                  <dd className="font-body text-right">
+                    <a
+                      href={a.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-gold hover:text-white transition-colors duration-300 group/link"
+                    >
+                      <Instagram className="w-3.5 h-3.5 text-gold/80 group-hover/link:text-white transition-colors duration-300" />
+                      <span className="border-b border-gold/30 hover:border-white transition-colors pb-0.5">
+                        {a.url ? a.url.replace("https://www.instagram.com/", "@").replace(/\/$/, "") : ""}
+                      </span>
+                    </a>
+                  </dd>
+                </div>
               </dl>
             </article>
           ))}
         </div>
+      </div>
+
+      {/* YouTube Video Section */}
+      <div className="w-full mt-12 md:mt-12 aspect-video relative group overflow-hidden border-y border-white/5 reveal">
+        <iframe
+          src="https://www.youtube.com/embed/3Nr99hrqfDU?autoplay=0&mute=0&controls=1&rel=0"
+          title="GROOVING Tattoo Experience"
+          className="w-full h-full border-0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+        {/* Subtle premium dark overlays to blend the video edges with the theme */}
+        <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-[#070707] to-transparent pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#070707] to-transparent pointer-events-none" />
       </div>
     </section>
   );
